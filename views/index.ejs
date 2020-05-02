@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/css.css"/>
+    
+    
+    
+    <title>LEE TM</title>
+
+  </head>
+  <body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="aboutus.html">Features</a>
+                <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </div>
+            </div>
+          </nav>
+        <!-- <nav class="navbar">
+          
+              <a class="navbar-brand" style="float: left;" href="#">
+                    <img src="http://placehold.it/150x50?text=Logo" alt="">
+                  </a>
+             
+                  <a href="#" class="nav-item is-active" active-color="orange">Home</a>
+                  <a href="#" class="nav-item" active-color="green">About</a>
+                  <a href="#" class="nav-item" active-color="blue">Testimonials</a>
+                  <a href="#" class="nav-item" active-color="red">Blog</a>
+                  <a href="#" class="nav-item" active-color="rebeccapurple">Contact</a>
+
+                  <span class="nav-indicator"></span>
+           
+          </nav> -->
+          
+        
+        <!-- <nav class="nav">
+            <a href="#" class="nav-item is-active" active-color="orange">Home</a>
+            <a href="#" class="nav-item" active-color="green">About</a>
+            <a href="#" class="nav-item" active-color="blue">Testimonials</a>
+            <a href="#" class="nav-item" active-color="red">Blog</a>
+            <a href="#" class="nav-item" active-color="rebeccapurple">Contact</a>
+
+            
+            <span class="nav-indicator">LEE</span>
+          </nav> -->
+
+    
+      
+    <script src="../js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,kY:-20}],
+              [{b:-1,d:1,x:-20,rY:-30},{b:0,d:1000,x:0,o:1,rY:0,e:{x:7,o:7,rY:7},p:{x:{dl:0.1},o:{dl:0.1},rY:{dl:0.1}}}],
+              [{b:-1,d:1,x:-20,rY:-30},{b:200,d:1000,x:0,o:1,rY:0,e:{x:7,o:7,rY:7},p:{x:{dl:0.1,o:1},o:{dl:0.1,o:1},rY:{dl:0.1,o:1}}}],
+              [{b:-1,d:1,x:-20,rY:-30},{b:1000,d:1000,x:0,o:1,rY:0,e:{x:7,o:7,rY:7},p:{x:{dl:0.1},o:{dl:0.1},rY:{dl:0.1}}}],
+              [{b:-1,d:1,x:-20,rY:-30},{b:1200,d:1000,x:0,o:1,rY:0,e:{x:7,o:7,rY:7},p:{x:{dl:0.1,o:1},o:{dl:0.1,o:1},rY:{dl:0.1,o:1}}}],
+              [{b:0,d:600,o:1},{b:600,d:1000,rp:1}],
+              [{b:-1,d:1,ls:2},{b:220,d:980,o:1,ls:0.2,e:{ls:6}}],
+              [{b:600,d:1000,pt:{d:"M691-57L546.64,289L277.36,259L691-57Z"},e:{pt:6},p:{pt:{dl:0.3}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1200;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 106 css*/
+        .jssorb106 {position:absolute;}
+        .jssorb106 .i {position:absolute;cursor:pointer;}
+        .jssorb106 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1800;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb106 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#2b1908;stroke-opacity:1;}
+        .jssorb106 .iav .b {fill:#fff;fill-opacity:1;stroke-width:1800;stroke:#46d1d3;stroke-opacity:0.6;}
+        .jssorb106 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+        <defs>
+            <filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+                <feImage x="0" y="0" width="980" height="380" data-load="href" result="r1" href="../img/surf.jpg"></feImage>
+                <feDisplacementMap in="SourceGraphic" in2="r1" scale="0" xchannelselector="R" ychannelselector="G" result="r2"></feDisplacementMap>
+                <feBlend mode="overlay" in="r2" in2="r1" result="r3"></feBlend>
+                <feComposite operator="in" in="r3" in2="r2" result="r4"></feComposite>
+            </filter>
+            <mask id="jssor_1_msk_3">
+                <path fill="#ffffff" id="jssor_1_lyr_2" d="M798.72,99.31L798.72,281.51L183.43,281.51L183.43,99.31L798.72,99.31Z" x="183" y="99" data-t="7" style="position:absolute;overflow:visible;"></path>
+            </mask>
+        </defs>
+    </svg>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;border-radius: 40px;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../img/spin.svg" />
+        </div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div data-p="680">
+                <img data-u="image" src="../img/surf.jpg" />
+                <div data-ts="preserve-3d" style="filter:url('#jssor_1_flt_1');left:0px;top:0px;width:980px;height:380px;position:absolute;overflow:visible;">
+                    <div data-to="50% 50%" data-ts="flat" data-p="170" data-t="0" style="left:0px;top:0px;width:980px;height:380px;position:absolute;overflow:visible;">
+                        <div data-to="0px 50%" data-ts="preserve-3d" data-arr="1" style="left:99px;top:121px;width:400px;height:24px;position:absolute;opacity:0;color:#910f00;font-size:20px;font-weight:700;line-height:1.2;letter-spacing:0.5em;">ANALYZE</div>
+                        <div data-to="0px 50%" data-ts="preserve-3d" data-arr="2" style="left:236px;top:-80px;width:15px;height:240px;position:absolute;opacity:0;color:#008391;font-size:11px;font-weight:900;line-height:1.5;text-align:center;"><br /><br /><br /><br /><br /><br />L<br />E<br />E<br /><br />T<br />M<br /></div>
+                        <div data-to="0px 50%" data-ts="preserve-3d" data-arr="3" style="left:309px;top:263px;width:400px;height:24px;position:absolute;opacity:0;color:#910f00;font-size:20px;font-weight:700;line-height:1.2;letter-spacing:0.5em;">WIN</div>
+                        <div data-to="0px 50%" data-ts="preserve-3d" data-arr="4" style="left:470px;top:93px;width:15px;height:240px;position:absolute;opacity:0;color:#008391;font-size:11px;font-weight:900;line-height:1.5;text-align:center;">F<br />A<br />S<br />T<br /><br />O<br />R<br /><br />L<br />A<br />S<br />T</div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-image:linear-gradient(-135deg,#fad40d 0%,#fad40d 50%,#161616 50%,#161616 100%);">
+                <img data-u="image" style="opacity:0.2;" src="../img/dreamstime_m_77849612_run.png" />
+                <svg viewbox="0 0 980 380" width="980" height="380" data-t="5" data-tchd="jssor_1_msk_3" style="left:0px;top:0px;display:block;position:absolute;opacity:0;overflow:hidden;">
+                    <g mask="url(#jssor_1_msk_3)">
+                        <path fill="#fad40d" d="M981.28-0.28L981.28,381.28L-0.28,381.28L-0.28-0.28L981.28-0.28Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+                        <image data-load="href" width="980" height="380" x="0" y="0" style="position:absolute;max-width:980px;" href="../img/dreamstime_m_77849612_run.png"></image>
+                        <text fill="#fad40d" text-anchor="middle" x="426" y="273" data-t="6" style="position:absolute;opacity:0;mix-blend-mode:difference;font-size:48px;font-style:italic;letter-spacing:2em;overflow:visible;">LEE TM
+                        </text>
+                    </g>
+                </svg>
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">LEE TM</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb106" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <path class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z"></path>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    
+     <!-- for navbar -->
+    <script>
+        const indicator = document.querySelector('.nav-indicator');
+const items = document.querySelectorAll('.nav-item');
+
+function handleIndicator(el) {
+  items.forEach(item => {
+    item.classList.remove('is-active');
+    item.removeAttribute('style');
+  });
+  
+  indicator.style.width = `${el.offsetWidth}px`;
+  indicator.style.left = `${el.offsetLeft}px`;
+  indicator.style.backgroundColor = el.getAttribute('active-color');
+
+  el.classList.add('is-active');
+  el.style.color = el.getAttribute('active-color');
+}
+
+
+items.forEach((item, index) => {
+  item.addEventListener('click', (e) => { handleIndicator(e.target)});
+  item.classList.contains('is-active') && handleIndicator(item);
+});
+    
+    </script>
+
+    <div class="container-fluid">
+
+        <div class="item" data-aos="zoom-in-down" style="text-align: center;">با ما بهترین باشید</div>
+
+        <img src="../img/abstract2.png" alt="Nature" class="rounded float-left responsive">
+
+
+
+
+    <div class="item" data-aos="fade-left">تحلیل کنید پول در بیارید</div>
+    <div class="item" data-aos="example-anim1">و لذت ببرید</div>    
+    </div>
+
+    
+
+    
+
+    
+
+    <!-- body effect -->
+    <script>
+    
+        AOS.init({
+            duration: 1200
+            });
+        
+        </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+
+    </div>
+  </body>
+</html>
